@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Атрибуты форм</title>
+  </head>
+  <body>
+    <a href="../index.html">Назад к первой странице</a>
+    <p>Аттрибут required - показывает, что поле обязательно для заполнения.</p>
+    <form id="my-form">
+      <label for="name">Имя:</label>
+      <input type="text" id="name" name="name" required />
+      <select name="user-city" id="city" required>
+        <option value="" disabled selected>Не выбрано</option>
+        <option value="moscow">Москва</option>
+        <option value="spb">Санкт-Петербург</option>
+      </select>
+      <br />
+      <p>Disabled - указываем, что поле формы неактивно</p>
+      <label for="disabled-input">Неактивное поле:</label>
+      <input type="text" id="disabled-input" name="disabled-input" disabled />
+      <br />
+      <p>
+        Readonly - можно только прочитать поле, и скопировать из него значение,
+        но не заполнять. В отличии от disabled, readonly позволяет выделять
+        текст.
+      </p>
+      <label for="readonly-input">Только для чтения:</label>
+      <input
+        type="text"
+        id="readonly-input"
+        name="readonly-input"
+        value="123456"
+        readonly
+      />
+      <br />
+      <p>Placeholder - подсказка, для ввода значения.</p>
+      <label for="placeholder-input">Поле с подсказкой:</label>
+      <input
+        type="text"
+        id="placeholder-input"
+        name="placeholder-input"
+        placeholder="Введите текст"
+      />
+      <br />
+      <p>
+        Inputmode - аттрибут, позволяющий настроить КЛАВИАТУРУ ДЛЯ МОБИЛЬНЫХ
+        УСТРОЙСТВ. В отличии от type, inputmode позволяет указать, какая именно
+        клавиатура должна открываться на мобильном устройстве. Всего 5 значений:
+      </p>
+      <ul>
+        <li>text</li>
+        <li>tel</li>
+        <li>email</li>
+        <li>numeric</li>
+        <li>decimal</li>
+        <li>search</li>
+        <li>none - в случае, если у нас есть свой компонент клавиатуры.</li>
+        <li>url</li>
+      </ul>
+      <p>Приводить пример не буду, тут и так всё понятно.</p>
+      <p>
+        Атрибут autocomplete - позволяет браузеру автоматически заполнять поля
+        формы на основе ранее введенных значений. Как браузер определяет, что
+        нужно автозаполнять? <br />
+        В первую очередь он смотрит на атрибут name, потом id, чтобы сопоставить
+        с словами под копотом браузера, которые сопоставляют значение. Приводить
+        пример также не буду.
+      </p>
+      <button type="submit">Отправить</button>
+      <p>
+        Атрибут autofocus - позволяет автоматически устанавливать фокус на
+        элемент формы при загрузке страницы.
+      </p>
+      <p>Атрибут form - используется для прикрепления инпута к форме.</p>
+      <p>
+        Minlength/maxlength - задают минимальную и максимальную длину вводимого
+        значения.
+      </p>
+      <label for="min-length">Минимальное значение 3 символа</label>
+      <input type="text" id="min-length" name="min-length" minlength="3" />
+      <label for="max-length">Максимальное значение 10 символов</label>
+      <input type="text" id="max-length" name="max-length" maxlength="10" />
+    </form>
+    <label for="form-input">Инпут, прикрепленный к форме:</label>
+    <input type="text" id="form-input" form="my-form" />
+  </body>
+</html>

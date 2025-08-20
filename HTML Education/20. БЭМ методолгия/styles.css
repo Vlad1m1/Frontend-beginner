@@ -1,0 +1,25 @@
+.header {
+  background-color: #f5f7fa;
+  font-family: "Roboto", sans-serif;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.logo {
+  width: 154.49px;
+  height: 24px;
+}
+
+.header__logo {
+  margin-left: 20px;
+}

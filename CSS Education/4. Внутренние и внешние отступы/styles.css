@@ -1,0 +1,53 @@
+div {
+  margin-bottom: 10px;
+}
+
+.box-1 {
+  padding: 30px;
+  background-color: lightblue;
+}
+
+.box-2 {
+  padding: 10px 50px;
+  background-color: lightgreen;
+}
+
+.box-3 {
+  padding: 50px 100px 150px;
+  background-color: lightcoral;
+}
+
+.box-4 {
+  padding: 50px 100px 150px 200px;
+  background-color: lightgoldenrodyellow;
+}
+
+.box-5 {
+  padding-top: 60px;
+  background-color: lightpink;
+}
+
+.box-6 {
+  padding-right: 60px;
+  background-color: lightblue;
+}
+
+.box-7 {
+  padding-bottom: 60px;
+  background-color: lightgreen;
+}
+
+.box-8 {
+  padding-left: 60px;
+  background-color: lightgoldenrodyellow;
+}
+
+.box-9 {
+  padding-block: 60px;
+  background-color: lightcoral;
+}
+
+.box-10 {
+  padding-inline: 60px;
+  background-color: lightpink;
+}

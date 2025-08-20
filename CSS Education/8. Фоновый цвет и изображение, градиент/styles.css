@@ -1,0 +1,43 @@
+div {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.box-1 {
+  background-color: red;
+}
+
+.box-2 {
+  background-color: green;
+}
+
+.box-3 {
+  background-color: blue;
+}
+
+.box-4 {
+  background-color: yellow;
+  background-image: url('imgs/images.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Градиенты */
+.box-1 {
+  background-image: linear-gradient(
+    0.75turn,
+    indianred 50%,
+    cornflowerblue 50%);
+  width: 500px;
+  height: 500px;
+}
+
+.box-2 {
+  background-image: linear-gradient(steelblue, darkorange);
+}
+
+.box-3 {
+  background-image: conic-gradient(deepskyblue, lightpink);
+}

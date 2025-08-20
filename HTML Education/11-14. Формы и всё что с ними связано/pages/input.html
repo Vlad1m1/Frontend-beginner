@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Инпуты</title>
+  </head>
+  <body>
+    <a href="../index.html">Назад к первой странице</a>
+    <p>Атрибут type=email</p>
+    <form>
+      <p>
+        <label for="email">Электронная почта: </label>
+        <input id="email" name="user-email" type="email" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>
+      Атрибут type=email позволяет ввести только корректный адрес электронной
+      почты.
+    </p>
+    <p>
+      Атрибут type=url позволяет ввести только корректный адрес веб-страницы.
+    </p>
+    <form>
+      <p>
+        <label for="url">Веб-страница: </label>
+        <input id="url" name="user-url" type="url" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>
+      Атрибут type=url позволяет ввести только корректный адрес веб-страницы.
+    </p>
+    <p>
+      Атрибут type=tel позволяет ввести только телефонный номер. Не проверяет
+      корректность ввода.
+    </p>
+    <form>
+      <p>
+        <label for="tel">Телефон: </label>
+        <input id="tel" name="user-tel" type="tel" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>
+      Атрибут type=tel позволяет ввести только телефонный номер. Не проверяет
+      корректность ввода.
+    </p>
+    <p>
+      Атрибут type=search позволяет ввести текст для поиска. Появляется крестик
+      в конце формы, для того чтобы стереть введённый текст.
+    </p>
+    <form>
+      <p>
+        <label for="search">Поиск: </label>
+        <input id="search" name="user-search" type="search" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>
+      Атрибут type=search позволяет ввести текст для поиска. Появляется крестик
+      в конце формы, для того чтобы стереть введённый текст.
+    </p>
+    <p>
+      Атрибут type=number позволяет ввести только числовое значение. Не
+      проверяет корректность ввода.
+    </p>
+    <form>
+      <p>
+        <label for="number">Число: </label>
+        <input id="number" name="user-number" type="number" />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>
+      Атрибут type=number позволяет ввести только числовое значение. Не
+      проверяет корректность ввода.
+    </p>
+    <p>Атрибут type=password позволяет ввести только пароль. Символы скрыты.</p>
+    <form>
+      <p>
+        <label for="password">Пароль: </label>
+        <input id="password" name="user-password" type="password" />
+      </p>
+      <p>
+        <button type="submit">Войти</button>
+      </p>
+    </form>
+    <p>Атрибут type=password позволяет ввести только пароль. Символы скрыты.</p>
+    <p>Существует очень много разных тайпов для ввода даты, времени.</p>
+    <form>
+      <!-- Нельзя настроить через CSS окна, для выбора даты, времени -->
+      <p>
+        <label for="fulldate">Введите дату в формате: день, месяц, год: </label>
+        <input id="fulldate" name="fulldate" type="date" />
+      </p>
+      <p>
+        <label for="fulldate-with-time"
+          >Введите дату в формате: день, месяц, год, время:
+        </label>
+        <input
+          id="fulldate-with-time"
+          name="fulldate-with-time"
+          type="datetime-local"
+        />
+      </p>
+      <p>
+        <label for="month-date">Введите дату в формате: месяц, год: </label>
+        <input id="month-date" name="month-date" type="month" />
+      </p>
+      <p>
+        <label for="week-date">Введите дату в формате: неделя, год: </label>
+        <input id="week-date" name="week-date" type="week" />
+      </p>
+      <p>
+        <label for="time">Введите время: </label>
+        <input id="time" name="time-date" type="time" />
+      </p>
+    </form>
+    <p>Атрибут type=color позволяет выбрать цвет.</p>
+    <form>
+      <p>
+        <!-- На колорпикер нельзя также настроить через CSS -->
+        <label for="prefer-color">Выберите предпочтительный цвет: </label>
+        <input id="prefer-color" name="prefer-color" type="color" />
+      </p>
+    </form>
+    <p>
+      Атрибут type=file позволяет закидывать в input файлы. Чтобы загрузить
+      несколько файлов, должен ещё стоять атрибут multiple.
+    </p>
+    <form>
+      <p>
+        <label for="file">Выберите файл: </label>
+        <input id="file" name="user-document" type="file" />
+      </p>
+      <p>
+        <label for="files">Выберите файлы: </label>
+        <input type="file" id="files" name="user-documents" multiple />
+      </p>
+      <p>
+        <button type="submit">Отправить</button>
+      </p>
+    </form>
+    <p>Type=checkbox - превращает input в чекбокс.</p>
+    <p>Type=radio - превращает input в радиокнопку.</p>
+    <form>
+      <fieldset>
+        <legend>Чекбоксы</legend>
+        <label for="checkbox1">Я крутой</label>
+        <input type="checkbox" id="checkbox1" name="user-checkbox-first" />
+        <br />
+        <label for="checkbox2">Я уверен в себе</label>
+        <input type="checkbox" id="checkbox2" name="user-checkbox-second" />
+      </fieldset>
+      <fieldset>
+        <legend>Радиокнопки</legend>
+        <label for="radio1">Я крутой</label>
+        <input type="radio" id="radio1" name="user-radio" />
+        <br />
+        <label for="radio2">Я уверен в себе</label>
+        <input type="radio" id="radio2" name="user-radio" />
+      </fieldset>
+    </form>
+    <p>Атрибут type=range позволяет выбрать значение из диапазона.</p>
+    <form>
+      <label for="range">Выберите значение: </label>
+      <input type="range" id="range" name="user-range" min="1" max="100" />
+    </form>
+    <p>
+      Атрибут type=hidden позволяет хранить данные, которые не видны
+      пользователю.
+    </p>
+    <form>
+      <input type="hidden" name="user-id" value="12345" />
+    </form>
+  </body>
+</html>

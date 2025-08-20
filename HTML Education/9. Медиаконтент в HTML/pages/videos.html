@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видео</title>
+  </head>
+  <body>
+    <p>Видео без атрибута <code>controls</code>.</p>
+    <video src="../videos/video.mp4"></video>
+    <p>Видео с атрибутом <code>controls</code>.</p>
+    <video src="../videos/video.mp4" controls></video>
+    <!-- Порой иногда какие-то браузеры могут не поддерживать тот или иной формат видео. Поэтому, вместо атрибута src можно использовать тег source,
+    чтобы всё было корректно. Пример ниже: -->
+    <video>
+      <source src="../videos/video.mp4" type="video/mp4" />
+      <!--Стоит указывать также инструкцию type, каким образом кодек сжимает видео.-->
+      <p>Ваш браузер не поддерживает видео.</p>
+    </video>
+    <!--Также существуют ещё несколько атрибутов для тега video:
+    1. autoplay - видео будет автоматически воспроизводиться при загрузке страницы
+    2. loop - видео будет зациклено
+    3. muted - видео будет без звука
+    4. playsinline - видео будет воспроизводиться встраиваемым образом на мобильных устройствах
+    5. poster - изображение, которое будет отображаться до начала воспроизведения видео
+    6. width и height - задают ширину и высоту видео-->
+    <p>С другими атрибутами.</p>
+    <video
+      src="../videos/video.mp4"
+      width="50%"
+      poster="../imgs/girl.jpg"
+      controls
+      loop
+    ></video>
+  </body>
+</html>

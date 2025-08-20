@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  font-family: 'Inter';
+}
+
+.relative-pos {
+  display: inline-block;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: blanchedalmond;
+  border: 2px solid black;
+  bottom: 0;
+  left: 0;
+}
+
+.modal {
+  display: inline-flex;
+  width: 300px;
+  height: 300px;
+  padding: 100px;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  position: fixed;
+  align-items: center;
+  top: 40%;
+  left: 40%;
+}

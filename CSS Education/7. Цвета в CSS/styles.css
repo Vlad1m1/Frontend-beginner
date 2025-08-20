@@ -1,0 +1,25 @@
+.key-word {
+  color: blue;
+}
+
+.rgb {
+  color: rgb(0 0 255 / 0.25);
+}
+
+.hex {
+  color: #0000ff80;
+}
+
+.hsl {
+  color: hsl(240 30% 50% / 0.25);
+}
+
+.transparent-color {
+  color: transparent;
+}
+
+.current-color {
+  display: inline-block;
+  color: orange;
+  border: 2px solid currentColor;
+}

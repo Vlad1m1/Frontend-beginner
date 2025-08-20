@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы</title>
+  </head>
+  <body>
+    <!--В атрибуте action - путь скрипта обработчика на стороне сервера. method - метод отправки данных (GET или POST)-->
+    <form action="/some-server-script-path" method="post">
+      <fieldset>
+        <legend>Паспортыне данные:</legend>
+        Группа полей для ввода...
+      </fieldset>
+      <fieldset>
+        <legend>Работа:</legend>
+        Группа полей для ввода...
+      </fieldset>
+      <fieldset>
+        <legend>Образование:</legend>
+        Группа полей для ввода...
+      </fieldset>
+      <!-- label и input идут в связке: один label к одному input -->
+      <label for="login">Логин: </label>
+      <!-- for у label и id у input должны совпадать -->
+      <input id="login" type="text" name="user-login" placeholder="Логин" />
+      <!-- Атрибуты инпута:
+       type: сигнализирует браузеру о типе данных, которые ожидаются от пользователя
+       name: имя поля, которое будет отправлено на сервер
+       placeholder: текст-подсказка, который отображается в поле ввода до ввода данных
+      -->
+      <input value="Отлично!" />
+    </form>
+    <a href="pages/forms and attributes.html">Атрибуты форм</a> <br />
+    <a href="pages/input.html">Инпуты</a> <br />
+    <a href="pages/texttags.html">
+      Текстовые теги, которые могут быть в формах
+    </a>
+  </body>
+</html>

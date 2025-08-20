@@ -1,0 +1,29 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lawngreen;
+
+  border-inline: 10px solid cyan;
+  border-top: 10px solid cyan;
+}
+
+.box-outline {
+  margin-top: 10px;
+
+  width: 150px;
+  height: 150px;
+  background-color: lightpink;
+  border: 10px solid deepskyblue;
+
+  outline: 5px solid gold;
+  outline-offset: -25px;
+}
+
+.box-border-radius {
+  margin-top: 20px;
+
+  width: 150px;
+  height: 150px;
+  background-color: lightpink;
+  border-radius: 50%;
+}
