@@ -39,7 +39,6 @@ const age = Number(prompt("Сколько тебе лет?"));
 //   }
 //   default: {
 //     console.log(`Твой возраст: ${userAge}`);
-//     break;
 //   }
 // }
 
@@ -64,6 +63,5 @@ switch(true) {
   }
   default: {
     console.log("Возраст введён некорректно.");
-    break;
   }
 }

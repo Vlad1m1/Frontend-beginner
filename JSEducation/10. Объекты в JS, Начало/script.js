@@ -42,3 +42,4 @@ delete anotherUser["is developer"];
 delete anotherUser.age; // Мы также можем удалить свойство, которого не было. Так конечно лучше не надо делать. Но имей ввиду, что такое возможно и ничего не ругает.
 
 console.log(anotherUser);
+
