@@ -62,10 +62,11 @@ anotherLogMessage(
 
 // Функции как результат другой функции. Пример:
 const validate = (hasAccess) => {
-  if (hasAccess)
+  if (hasAccess) {
     return () => console.log("Доступ разрешён :)");
-  else
-    return () => console.log("Доступ запрещён :(");
+  }
+
+  return () => console.log("Доступ запрещён :(");
 }
 
 /**
